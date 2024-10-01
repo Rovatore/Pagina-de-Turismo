@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+:root{
+  font-family: "Open Sans", sans-serif;
+  --background-default: #f5f4f0;
+  --border-primary: #d9d9d9;
+  --text-primary: #1b1b1b;
+  --text-secondary: #333333;
+  --text-tertiary: #696969;
+  --text-headline: #e1624f;
+  --accent-blue: #0c51a7;
+  --accent-orange: #e95e10;
+  --accent-pink: #e5245e;
+  --accent-purple: #591b98;
+}
+body{
+    background-color: var(--background-default);
+    margin: 88px 80px;
+}
+main {
+  padding: 24px;
+}
+
+#page{
+  box-sizing: border-box;
+  width: 1120px;
+  padding: 88px 80px;
+}
+
+.headline{
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
+  color: var(--text-headline);
+  text-transform: uppercase;
+}
+h1{
+  font-weight: bolder;
+  font-size: 36px;
+  color: var(--text-primary);
+}
+img{
+  border-radius: 28px;
+  width: 100%;
+  margin: 40px auto;
+}
+#subtitle{
+  font-size: 16px;
+  text-align: center;
+  font-style: italic;
+}
+.divider{
+  width: 100%;
+  height: 1px;
+  margin: 36px 0;
+  background-color: var(--border-primary);
+}
+.paragraph{
+  font-size: 16px;
+  font-weight: normal;
+  color: var(--text-secondary);
+}
+h2{
+  font-size: 32px;
+  font-weight: bold;
+}
+h3{
+  font-size: 28px;
+  font-weight: bold;
+}
+ul li ::marker{
+  color: var(--text-secondary);
+}
+#historia{
+  color: var(--accent-blue);
+  font-weight: bold;
+}
+#casais{
+  color: var(--accent-purple);
+  font-weight: bold;
+}
+#Familias{
+  color: var(--accent-pink);
+  font-weight: bold;
+}
+#orçamentos{
+  color: var(--accent-orange);
+  font-weight: bold;
+}
+
+footer{
+  text-align: center;
+}
