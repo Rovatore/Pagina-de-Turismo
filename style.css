@@ -2,8 +2,25 @@
   margin: 0;
   padding: 0;
 }
-:root{
+
+.open-sans-{
   font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.alice-regular {
+  font-family: "Alice", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root{
+  --alice-regular: "Alice", serif;
+  --open-sans: "Open Sans", sans-serif;
   --background-default: #f5f4f0;
   --border-primary: #d9d9d9;
   --text-primary: #1b1b1b;
@@ -31,6 +48,7 @@ main {
 
 .headline{
   font-size: 16px;
+  font-family: var(--open-sans);
   line-height: 22px;
   font-weight: bold;
   color: var(--text-headline);
@@ -39,6 +57,7 @@ main {
 h1{
   font-weight: bolder;
   font-size: 36px;
+   font-family: var(--open-sans);
   color: var(--text-primary);
 }
 img{
@@ -48,6 +67,7 @@ img{
 }
 #subtitle{
   font-size: 16px;
+   font-family: var(--open-sans);
   text-align: center;
   font-style: italic;
 }
@@ -58,15 +78,19 @@ img{
   background-color: var(--border-primary);
 }
 .paragraph{
+  font-family: var(--open-sans); 
   font-size: 16px;
   font-weight: normal;
   color: var(--text-secondary);
 }
 h2{
+  font-family: var(--open-sans);
   font-size: 32px;
   font-weight: bold;
+  
 }
 h3{
+  font-family: var(--open-sans); 
   font-size: 28px;
   font-weight: bold;
 }
@@ -74,22 +98,39 @@ ul li ::marker{
   color: var(--text-secondary);
 }
 #historia{
+  font-family: var(--open-sans); 
   color: var(--accent-blue);
   font-weight: bold;
 }
 #casais{
+  font-family: var(--open-sans); 
   color: var(--accent-purple);
   font-weight: bold;
 }
 #Familias{
+  font-family: var(--open-sans); 
   color: var(--accent-pink);
   font-weight: bold;
 }
-#orçamentos{
+#orcamentos{
+  font-family: var(--open-sans); 
   color: var(--accent-orange);
   font-weight: bold;
 }
-
-footer{
+footer {
   text-align: center;
+  font-family: var(--alice-regular);
+  color: var(--text-secondary);
+  line-height: 150%;
+  font-size: 16px;
+  padding-bottom: 48px;
+}
+footer img{
+  vertical-align: middle;
+  width: 16px;
+}
+#centralizar{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
