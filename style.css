@@ -48,6 +48,7 @@ main {
 
 .headline{
   font-size: 16px;
+  margin: 8px 2px;
   font-family: var(--open-sans);
   line-height: 22px;
   font-weight: bold;
@@ -130,6 +131,7 @@ footer img{
   width: 16px;
 }
 #centralizar{
+  font-family: var(--open-sans);
   text-align: center;
   justify-content: center;
   align-items: center;
